@@ -1,0 +1,105 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: rgb(249, 251, 252);
+}
+
+.container {
+  width: 90vw;
+  max-width: 1200px;
+  margin: 5rem auto;
+  display: block;
+}
+
+.tours_section .title {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  font-size: 40px;
+  font-weight: 400;
+  color: black;
+  margin-bottom: 30px;
+}
+.tours_section .title_underline {
+  width: 55%;
+  height: 4px;
+  background-color: #10b981;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+}
+.tours_section .tours {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.tours_section .tours .tour {
+  max-width: 352px;
+  height: auto;
+  background-color: white;
+  position: relative;
+  border-radius: 12px;
+}
+.tours_section .tours .tour:hover {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.288);
+}
+.tours_section .tours .tour_image {
+  width: 100%;
+  height: 320px;
+  display: block;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.tours_section .tours .tour_price {
+  padding: 8px;
+  color: white;
+  font-size: 16px;
+  background-color: #10b981;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top-right-radius: 12px;
+}
+.tours_section .tours .tour .tour_description {
+  padding: 32px 24px;
+}
+.tours_section .tours .tour .tour_description_title {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+.tours_section .tours .tour .tour_description_paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 16px 0 20px 0;
+}
+.tours_section .tours .delete_button {
+  padding: 6px 12px;
+  border: #10b981 1.5px solid;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #10b981;
+  cursor: pointer;
+  width: 100%;
+}
+.tours_section .tours .delete_button:hover {
+  background-color: #10b981;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
